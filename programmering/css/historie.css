@@ -1,0 +1,163 @@
+/*
+Headings:
+font-family: "ratiomodern", serif;
+Tekst:
+font-family: "athelas", serif;
+Farver:
+#fff6f1
+#284066
+#f2cedb, #ef9abc
+#dcd6e5, #b6a0d8
+#dfeaef, #afd4e8
+#f7e8d0, #f9cf85
+*/
+
+main {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+h1
+{
+    line-height: 1.2em;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+p {
+    line-height: 2em;
+    font-size: 1.7rem;
+}
+
+/*==========INTRO==========*/
+#intro
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 70px;
+}
+
+.navigation {
+    padding-bottom: 70px;
+}
+
+#sita 
+{
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+/*==========IDEEN OM==========*/
+
+.top-wave {
+    position: absolute;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.top-wave .shape-fill {
+    fill: #f2cedb;
+}
+
+
+.bottom-wave {
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.bottom-wave .shape-fill {
+    fill: #f2cedb;
+}
+
+#ideen
+{
+    background-color:#f2cedb ;
+    padding: 70px 50px;
+    position: relative;
+}
+
+#lokale {
+    padding: 100px 50px;
+}
+
+#vidste {
+    padding: 70px 50px;
+    position: relative;
+}
+
+/*==========BILLEDER==========*/
+#billeder
+{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+#billeder img {
+    width: 400px;
+}
+
+#palme
+{
+    position: absolute;
+    transform: rotate(-30deg);
+    z-index: 2;
+    width: 600px;
+    right: -100px;
+    top: -50px;
+}
+
+#magpie
+{
+    position: absolute;
+    z-index: 2;
+    width: 750px;
+    right: -100px;
+    top: 150px;
+}
+
+#rejse
+{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#graphic
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#graphic video {
+    width: 70%;
+}

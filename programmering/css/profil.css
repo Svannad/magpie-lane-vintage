@@ -1,0 +1,165 @@
+/*
+Headings:
+font-family: "ratiomodern", serif;
+Tekst:
+font-family: "athelas", serif;
+Farver:
+#fff6f1
+#284066
+#f2cedb, #ef9abc
+#dcd6e5, #b6a0d8
+#dfeaef, #afd4e8
+#f7e8d0, #f9cf85
+*/
+
+/*==========TOPPEN=========*/
+
+#toppen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin: 20px 70px;
+}
+
+#toppen div, #toppen h1, #toppen span {
+    width: 400px;
+}
+
+#toppen h1 {
+    text-align: center;
+}
+
+/*==========OPLYSNINGER=========*/
+
+.top-wave {
+    position: absolute;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.top-wave .shape-fill {
+    fill: #dfeaef;
+}
+
+
+.bottom-wave {
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.bottom-wave .shape-fill {
+    fill: #dfeaef;
+}
+
+#oplysninger {
+    background-color: #dfeaef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+    position: relative;
+}
+
+#oplysninger table {
+    border: 2px solid #284066;
+    margin: 50px 0;
+    text-align: left;
+    padding: 20px;
+}
+
+.first {
+    font-size: 1.5rem;
+    font-family: "ratiomodern", serif;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+#oplysninger table td, #oplysninger table th {
+    padding-right: 80px;
+}
+
+.bottom {
+    padding-bottom: 15px;
+}
+
+.rediger {
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+/*==========RESERVERET & LIKES=========*/
+
+#reserve, #likes {
+    margin: 70px;
+}
+
+.vare-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vare-card {
+    height: 400px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 75px 20px 0;
+}
+
+.vare-card h3 {
+    padding-bottom: 5px;
+}
+
+.img-wrap {
+    height: 330px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f7e8d0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrap a img {
+    height: 330px;
+}
+
+.arti, .like {
+    position: absolute;
+    height: 30px;
+    bottom: 5px;
+}
+
+.arti {
+    left: 5px;
+}
+
+.like {
+    right: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,143 @@
+/*
+Headings:
+font-family: "ratiomodern", serif;
+Tekst:
+font-family: "athelas", serif;
+Farver:
+#fff6f1
+#284066
+#f2cedb, #ef9abc
+#dcd6e5, #b6a0d8
+#dfeaef, #afd4e8
+#f7e8d0, #f9cf85
+*/
+
+/*==========LANDING PAGE==========*/
+
+#landingpage {
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#landingpage img {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+/*==========VORES VARER==========*/
+
+.top-wave {
+    position: absolute;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.top-wave .shape-fill {
+    fill: #dcd6e5;
+}
+
+
+.bottom-wave {
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.bottom-wave .shape-fill {
+    fill: #dcd6e5;
+}
+
+#tilbyder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #dcd6e5;
+    position: relative;
+    padding: 20px 0;
+}
+
+#tilbyder h1 {
+    padding-bottom: 30px;
+}
+
+#emne-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.emne-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 80px;
+    cursor: pointer;
+}
+
+.emne-card img {
+    width: 260px;
+    height: 310px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.emne-card h2 {
+    padding-top: 20px;
+}
+
+/*==========LÆR OS AT KENDE==========*/
+
+#kende {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#kende img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    object-position: left;
+}
+
+#info-wrap {
+    padding-left: 70px;
+}
+
+#info-wrap p {
+    padding: 20px 0;
+    font-size: 1.3rem;
+    line-height: 1.7em;
+}

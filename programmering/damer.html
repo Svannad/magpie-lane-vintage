@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magpie Lane Vintage</title>
+    <meta name="description" content="Find et stort udvalg af vintage tøj til kvinder">
+    <meta name="keywords" content="dametøj, kvindetøj, tøj til damer, tøj til kvinder, pigetøj, nederdele, kjoler, jakker">
+    <meta name="geo.placename" content="Aarhus">
+    <meta name="geo region" content="dk">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://use.typekit.net/ydv3vsu.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ydv3vsu.css">
+    <link rel="stylesheet" href="./css/damer.css">
+    <link rel="stylesheet" href="./css/fælles.css">
+</head>
+<body>
+
+<!--Fælles Navigations Bar-->
+    <header>
+        <figure>
+            <a href="./index.html"><img src="./img/logo.png" alt="Magpie Lane Vintage" class="logo"></a>
+        </figure>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inspiration</a>
+                    <ul>
+                        <li><a href="#">Kropstyper</a></li>
+                        <li><a href="./inspiration.html">Årtier</a>
+                            <ul>
+                                <li><a href="#">00'erne</a></li>
+                                <li><a href="#">90'erne</a></li>
+                                <li><a href="#">80'erne</a></li>
+                                <li><a href="#">70'erne</a></li>
+                                <li><a href="#">60'erne</a></li>
+                                <li><a href="#">50'erne</a></li>
+                                <li><a href="#">40'erne</a></li>
+                                <li><a href="#">30'erne</a></li>
+                                <li><a href="#">20'erne</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Vores Varer</a>
+                    <ul>
+                        <li><a href="./damer.html">Damer</a></li>
+                        <li><a href="#">Herrer</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Om Os</a>
+                    <ul>
+                        <li><a href="./historie.html">Vores Historie</a></li>
+                        <li><a href="./find-os.html">Find Os</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="./profil.html"><img src="./ikoner/profil.png" alt="Profil Ikoner" id="profil"></a>
+        </nav>
+    </header>
+
+<!--Main Content-->
+    <main>
+        <section id="toppen">
+            <div id="filter-wrap">
+                <div class="navigation">
+                    <a href="./index.html">Hjem</a>
+                    <p>></p>
+                    <a href="./damer.html">Damer</a>
+                </div>
+                <button id="filter" onclick="show()">Filter</button>
+            
+            <!--Gemt Filter-->
+                <div id="btnWrap">
+                    <section class="filter-sec">
+                        <h3>Årtier</h3>
+                        <label class="container">00'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">90'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">80'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">70'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">60'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">50'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">40'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">30'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">20'erne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </section>
+                    <section class="filter-sec">
+                        <h3>Størrelser</h3>
+                        <label class="container">XL
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">L
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">M
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">S
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">XS
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </section>
+                    <section class="filter-sec">
+                        <h3>Farver</h3>
+                        <label class="container">Sort
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Hvid
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Rød
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Gul
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Blå
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </section>
+                </div>
+            </div>
+            <h1 id="overskrift">DAMER</h1>
+            
+        <!--Bestem Selv Pris-->
+            <div id="pricerange">
+                <h3>Price Range</h3>
+                <figure class="slider">
+                    <div class="progress"></div>
+                  </figure>
+                  <figure class="range-input">
+                    <input type="range" class="range-min" min="0" max="2500" value="600" step="50">
+                    <input type="range" class="range-max" min="0" max="2500" value="1900" step="50">
+                  </figure>
+                <section class="price-input">
+                    <div class="field">
+                      <span>Kr.</span>
+                      <input type="number" class="input-min" value="600">
+                    </div>
+                    <span class="separator"></span>
+                    <div class="field">
+                      <span>Kr.</span>
+                      <input type="number" class="input-max" value="1900">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    <!--Vores Varer-->
+        <section id="varer">
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="./item.html"><img src="./img/longskirt.png" alt="lang vintage nederdel" onmouseover="this.src='./img/longskirt-h.png'" onmouseout="this.src='./img/longskirt.png'"></a>
+                    <img src="./ikoner/50s.png" alt="50'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked" onclick="liked()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked" onclick="unliked()">
+                </div>
+                <h3>Lang Nederdel</h3>
+                <p class="pris">275 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/floraldress.png" alt="vintage floral kjole" onmouseover="this.src='./img/floraldress-h.png'" onmouseout="this.src='./img/floraldress.png'"></a>
+                    <img src="./ikoner/20s.png" alt="20'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked1" onclick="liked1()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked1" onclick="unliked1()">
+                </div>
+                <h3>Floral Kjole</h3>
+                <p class="pris">385 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/minidress.png" alt="vintage mini kjole" onmouseover="this.src='./img/minidress-h.png'" onmouseout="this.src='./img/minidress.png'"></a>
+                    <img src="./ikoner/80s.png" alt="80'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked2" onclick="liked2()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked2" onclick="unliked2()">
+                </div>
+                <h3>Mini Dress</h3>
+                <p class="pris">293 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/maxiskirt.png" alt="maxi vintage nederdel" onmouseover="this.src='./img/maxiskirt-h.png'" onmouseout="this.src='./img/maxiskirt.png'"></a>
+                    <img src="./ikoner/70s.png" alt="70'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked3" onclick="liked3()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked3" onclick="unliked3()">
+                </div>
+                <h3>Vintage Nederdel</h3>
+                <p class="pris">743 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/cocktaildress.png" alt="vintage cocktail kjole" onmouseover="this.src='./img/cocktaildress-h.png'" onmouseout="this.src='./img/cocktaildress.png'"></a>
+                    <img src="./ikoner/00s.png" alt="00'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked4" onclick="liked4()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked4" onclick="unliked4()">
+                </div>
+                <h3>Cocktail Dress</h3>
+                <p class="pris">420 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/miniskirt.png" alt="mini vintage nederdel" onmouseover="this.src='./img/miniskirt-h.png'" onmouseout="this.src='./img/miniskirt.png'"></a>
+                    <img src="./ikoner/60s.png" alt="60'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked5" onclick="liked5()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked5" onclick="unliked5()">
+                </div>
+                <h3>Mini Skirt</h3>
+                <p class="pris">290 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/summerdress.png" alt="vintage summer kjole" onmouseover="this.src='./img/summerdress-h.png'" onmouseout="this.src='./img/summerdress.png'"></a>
+                    <img src="./ikoner/30s.png" alt="30'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked6" onclick="liked6()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked6" onclick="unliked6()">
+                </div>
+                <h3>Maxi Dress</h3>
+                <p class="pris">1150 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/skirt.png" alt="vintage nederdel" onmouseover="this.src='./img/skirt-h.png'" onmouseout="this.src='./img/skirt.png'"></a>
+                    <img src="./ikoner/80s.png" alt="80'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked7" onclick="liked7()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked7" onclick="unliked7()">
+                </div>
+                <h3>Nederdel fra 80'erne</h3>
+                <p class="pris">349 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/wrapdress.png" alt="vintage wrapdress" onmouseover="this.src='./img/wrapdress-h.png'" onmouseout="this.src='./img/wrapdress.png'"></a>
+                    <img src="./ikoner/40s.png" alt="40'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked8" onclick="liked8()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked8" onclick="unliked8()">
+                </div>
+                <h3>Wrap Dress</h3>
+                <p class="pris">668 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/formaldress.png" alt="vintage formal kjole" onmouseover="this.src='./img/formaldress-h.png'" onmouseout="this.src='./img/formaldress.png'"></a>
+                    <img src="./ikoner/20s.png" alt="20'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked9" onclick="liked9()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked9" onclick="unliked9()">
+                </div>
+                <h3>Formal Kjole</h3>
+                <p class="pris">2395 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/jacket.png" alt="vintage jakke" onmouseover="this.src='./img/jacket-h.png'" onmouseout="this.src='./img/jacket.png'"></a>
+                    <img src="./ikoner/50s.png" alt="50'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked10" onclick="liked10()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked10" onclick="unliked10()">
+                </div>
+                <h3>50'ere Jakke</h3>
+                <p class="pris">1449 kr.</p>
+            </div>
+            <div class="vare-card">
+                <div class="img-wrap">
+                    <a href="#"><img src="./img/dress.png" alt="vintage kjole" onmouseover="this.src='./img/dress-h.png'" onmouseout="this.src='./img/dress.png'"></a>
+                    <img src="./ikoner/90s.png" alt="90'erne ikon" class="arti">
+                    <img src="./ikoner/like.png" alt="liked hjerte ikon" class="like" id="liked11" onclick="liked11()">
+                    <img src="./ikoner/unlike.png" alt="unliked hjerte ikon" class="like" id="unliked11" onclick="unliked11()">
+                </div>
+                <h3>Sommer Kjole</h3>
+                <p class="pris">573 kr.</p>
+            </div>
+        </section>
+    </main>
+
+    <!--Fælles Footer-->
+    <footer>
+        <div class="footer-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <section class="footer-sec">
+            <h3>Åbningstider</h3>
+            <table id="tider">
+                <tr>
+                    <td>Man - Tors</td>
+                    <td class="right">12:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Fredag</td>
+                    <td class="right">12:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <td>Lørdag</td>
+                    <td class="right">11:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Søndag</td>
+                    <td class="right">Lukket</td>
+                </tr>
+            </table>
+        </section>
+        <section class="footer-sec">
+            <h3>Om Os</h3>
+            <address>
+                Guldsmedgade 38 <br>
+                8000 Aarhus
+            </address>
+            <a href="tel:+4525132867">Tlf. +45 25132867</a>
+        </section>
+        <section class="footer-sec">
+            <h3>Find Os</h3>
+            <div id="some">
+                <a href="#" onmouseover="facebookHover('./ikoner/fb-hover.png')" onmouseout="facebookHover('./ikoner/facebook.png')"><img src="./ikoner/facebook.png" alt="facebook ikon" class="facebook"></a>
+                <a href="#" onmouseover="instaHover('./ikoner/insta-hover.png')" onmouseout="instaHover('./ikoner/instagram.png')"><img src="./ikoner/instagram.png" alt="instagram ikon" class="instagram"></a>
+                <a href="#" onmouseover="tiktokHover('./ikoner/tt-hover.png')" onmouseout="tiktokHover('./ikoner/tiktok.png')"><img src="./ikoner/tiktok.png" alt="tiktok ikoner" class="tiktok"></a>
+            </div>
+        </section>
+    </footer>
+    
+<!--JavaScript-->
+<script src="./js/damer.js"></script>
+<script src="./js/like.js"></script>
+<script src="./js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/*
+Headings:
+font-family: "ratiomodern", serif;
+Tekst:
+font-family: "athelas", serif;
+Farver:
+#fff6f1
+#284066
+#f2cedb, #ef9abc
+#dcd6e5, #b6a0d8
+#dfeaef, #afd4e8
+#f7e8d0, #f9cf85
+*/
+
+/*==========INTRO=========*/
+
+.top-wave {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.top-wave .shape-fill {
+    fill: #dcd6e5;
+}
+
+
+.bottom-wave {
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.bottom-wave .shape-fill {
+    fill: #dcd6e5;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#intro h1 {
+    z-index: 1;
+}
+
+#intro-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #dcd6e5;
+    overflow: hidden;
+    width: 100%;
+}
+
+.person {
+    width: 400px;
+}
+
+#left {
+    position: absolute;
+    width: 30%;
+    transform: scaleX(-1) rotate(-25deg);
+    left: -100px;
+}
+
+#right {
+    position: absolute;
+    width: 30%;
+    right: -100px;
+    transform: rotate(-25deg);
+}
+
+/*==========ÅRTIER==========*/
+
+#valg-ar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#valg-ar p {
+    text-align: center;
+    margin: 20px;
+    width: 40%;
+    line-height: 1.7em;
+}
+
+#img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#img-wrap img {
+    width: 200px;
+    margin: 40px 100px;
+    transition: 0.3s;
+}
+
+#img-wrap img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}

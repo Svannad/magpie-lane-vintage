@@ -1,0 +1,201 @@
+/*
+Headings:
+font-family: "ratiomodern", serif;
+Tekst:
+font-family: "athelas", serif;
+Farver:
+#fff6f1
+#284066
+#f2cedb, #ef9abc
+#dcd6e5, #b6a0d8
+#dfeaef, #afd4e8
+#f7e8d0, #f9cf85
+*/
+main
+{
+    position: relative;
+    overflow: hidden;
+    line-height: 1.7em;
+    padding: 20px 0;
+}
+
+p {
+    line-height: 2em;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+/*==========FIND OS==========*/
+#find
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 70px;
+padding: 0 70px;
+}
+
+.navigation {
+    padding-bottom: 50px;
+}
+
+#map iframe
+{
+    height: 400px;
+    width: 700px;
+    border: 1px solid #284066;
+}
+
+/*==========KONTAKT OS==========*/
+.top-wave {
+    position: absolute;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.top-wave .shape-fill {
+    fill: #dfeaef;
+}
+
+
+.bottom-wave {
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 66px;
+}
+
+.bottom-wave .shape-fill {
+    fill: #dfeaef;
+}
+
+#kontakt
+{
+    background-color: #dfeaef;
+    position: relative;
+    padding: 50px 70px;
+}
+
+#besked
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 50px 0;
+}
+
+#oplysninger {
+    padding-right: 100px;
+}
+
+#oplysninger input
+{
+    display: flex;
+    flex-direction: column;  
+    width: 300px;
+    border: 1px solid #284066;
+    padding: 10px 20px;
+}
+
+#oplysninger label {
+    font-size: 1.3rem;
+}
+
+#boks label
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+#textbox
+{
+    width: 500px;
+    height: 213px;
+    padding: 10px 20px;
+    border: 1px solid #284066;
+}
+
+#palme {
+    position: absolute;
+    right: -150px;
+    transform: rotate(-25deg);
+    top: -20px;
+    width: 550px;
+}
+
+/*==========FAQ==========*/
+
+.faqboks
+{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 70px;
+}
+
+.titel
+{
+    font-size: 3rem;
+    padding-bottom: 50px;
+}
+
+.faq
+{
+    border-bottom: 2px solid #284066;
+    cursor: pointer;
+    padding: 30px 0;
+    max-width: 90%;
+}
+
+.spoergsmaal
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.spoergsmaal h3
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.svar p
+{
+    padding: 30px 10px;
+    line-height: 1.7em;
+    font-size: 1.2rem;
+}
+.svar
+{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1.4s ease;
+}
+
+.faq.active .svar
+{
+max-height: 300px;
+}

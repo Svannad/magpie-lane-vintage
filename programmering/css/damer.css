@@ -1,0 +1,271 @@
+/*
+Headings:
+font-family: "ratiomodern", serif;
+Tekst:
+font-family: "athelas", serif;
+Farver:
+#fff6f1
+#284066
+#f2cedb, #ef9abc
+#dcd6e5, #b6a0d8
+#dfeaef, #afd4e8
+#f7e8d0, #f9cf85
+*/
+
+main {
+  margin-bottom: 70px;
+}
+
+/*==========HEADING==========*/
+
+#toppen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 70px;
+    margin-bottom: 50px;
+}
+
+#overskrift {
+    text-align: center;
+}
+
+/*==========FILTER==========*/
+
+button {
+    font-size: 1.3rem;
+    color: #fff6f1;
+    background: #284066;
+    border: none;
+    padding: 3px 20px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: #afd4e8;
+    color: #284066;
+}
+
+#btnWrap {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff6f1;
+  border: 1px solid #284066;
+  padding: 5px 15px;
+}
+
+.filter-sec {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  width: 150px;
+}
+
+.filter-sec h3 {
+  background-color: #284066;
+  color: #fff6f1;
+  margin: 5px 0;
+  padding: 2px 5px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding: 0 50px 0 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  border: 1px solid #284066;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #dfeaef;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #afd4e8;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 5px;
+  top: 0;
+  width: 5px;
+  height: 10px;
+  border: solid #fff6f1;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*==========PRICE RANGE==========*/
+
+#pricerange, #overskrift, #filter-wrap {
+    width: 200px;
+}
+
+#pricerange h3 {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.price-input{
+    width: 100%;
+    display: flex;
+  }
+  .price-input .field{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+  }
+  .field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    background: none;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .price-input .separator{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider{
+    height: 3px;
+    position: relative;
+    background: #dfeaef;
+    border-radius: 5px;
+  }
+  .slider .progress{
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #284066;
+  }
+  .range-input{
+    position: relative;
+  }
+  .range-input input{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: -3px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #284066;
+    pointer-events: auto;
+    -webkit-appearance: none;
+  }
+  input[type="range"]::-moz-range-thumb{
+    height: 10px;
+    width: 10px;
+    border: none;
+    border-radius: 50%;
+    background: #284066;
+    pointer-events: auto;
+    -moz-appearance: none;
+  }
+
+/*==========VARE OVERVIEW==========*/
+
+#varer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vare-card {
+    height: 400px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 50px;
+}
+
+.vare-card h3 {
+    padding-bottom: 5px;
+}
+
+.img-wrap {
+    height: 330px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f7e8d0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrap a img {
+    height: 330px;
+
+}
+
+.arti, .like {
+    position: absolute;
+    height: 30px;
+    bottom: 5px;
+}
+
+.arti {
+    left: 5px;
+}
+
+.like {
+    right: 5px;
+    cursor: pointer;
+}
